@@ -1,0 +1,64 @@
+.ecrire{
+   
+    width: 100%;
+    margin: 0 auto;
+    background:#1A1B1B;
+    
+    .sec-two{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        @media screen and (max-width:796px){
+            grid-template-columns:1fr;
+            
+        }
+        width: 85%;
+        height:50%;
+        margin: 0 auto;
+        .left-img{
+            align-self: center;
+             @media screen and (max-width:626px) {
+                display:none;
+            
+            }
+            img{
+                width: 80%;
+                height: 80%;
+            }
+           
+        }
+
+        .right-write{
+            text-align: left;
+           
+          
+            p{
+                font-family:$font2;
+                width:100%;
+                font-weight: 600;
+                line-height: 24px;
+            }
+
+            h2{
+                font-size: 2.8em;
+                text-transform: capitalize;
+                letter-spacing: 5px;
+                margin: 20px 0;
+    
+              
+                span{
+                    color: $color3;
+                }
+            }
+            .name{
+                letter-spacing: 5px;
+                color:$color3;
+                span{
+                    color:$color2;
+                }
+            }
+
+        }
+    }
+
+
+}

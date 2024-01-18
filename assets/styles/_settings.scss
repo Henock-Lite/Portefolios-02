@@ -1,0 +1,37 @@
+ $color1:#0000;
+ $color2:#fEfEfE;
+ $color3:#22cee1;
+
+$font1:'Cabin Sketch',
+sans-serif;
+$font2:'Montserrat',
+sans-serif;
+$font3: 'Carrois Gothic',
+ sans-serif;
+
+
+ @mixin aligncenter{
+    display: flex;
+    justify-content: center;
+ }
+ @mixin aligngrid{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+ }
+
+ body{
+    width: 100%;
+    text-align: center;
+    font-family: $font3;
+    background: #121212;
+    color: $color2;
+    height: 100%;
+ }
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+ }
+
